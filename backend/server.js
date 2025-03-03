@@ -11,10 +11,10 @@ app.use(express.json());
 connectDB();
 app.get("/",(req,res)=>{
     console.log("API is rinning ")
-    res.send("api is running ")
+    res.send("API is running ")
 })
  app.use("/api/users",userRouter,()=>{
-    res.send("api is hunging ")
+    res.send("API is hunging ")
  });
 app.use(errorHandler);
 const PORT = process.env.PORT || 5000;
